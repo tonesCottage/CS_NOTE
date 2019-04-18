@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Migrated rules for GravityBallScreenSaver.ruleset" Description="已通过项目“C:\csharp课程\12 绘图与图像\SomeApplications\GravityBallScreenSaver\GravityBallScreenSaver.csproj”中的“Clipboard (Any CPU)”配置的 CodeAnalysisRules 属性创建此规则集。" ToolsVersion="10.0">
+  <RuleHintPaths>
+    <Path>\rules</Path>
+  </RuleHintPaths>
+</RuleSet>

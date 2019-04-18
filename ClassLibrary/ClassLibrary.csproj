@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58AD9746-0A3D-4696-89EF-69D247D76147}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassLibrary</RootNamespace>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Peking_Cs\basic\Jiaogu.cs" />
+    <Compile Include="Peking_Cs\basic\PrimeFilter.cs" />
+    <Compile Include="Peking_Cs\p10\SysWeb.cs" />
+    <Compile Include="Peking_Cs\p10\Xml_Xlst.cs" />
+    <Compile Include="Peking_Cs\p11\Async_1.cs" />
+    <Compile Include="Peking_Cs\p11\Async_2.cs" />
+    <Compile Include="Peking_Cs\p11\Async_Await1.cs" />
+    <Compile Include="Peking_Cs\p11\Async_HttpClientT.cs" />
+    <Compile Include="Peking_Cs\p11\Async_StreamT.cs" />
+    <Compile Include="Peking_Cs\p11\FormAsync.cs" />
+    <Compile Include="Peking_Cs\p3\IndexRecord.cs" />
+    <Compile Include="Peking_Cs\p3\Struct.cs" />
+    <Compile Include="Peking_Cs\p4\Attribute6.cs" />
+    <Compile Include="Peking_Cs\p4\Delegate1.cs" />
+    <Compile Include="Peking_Cs\p4\Digit.cs" />
+    <Compile Include="Peking_Cs\p4\Event2.cs" />
+    <Compile Include="Peking_Cs\p4\OperateComplex.cs" />
+    <Compile Include="Peking_Cs\p6\FileSeriable.cs" />
+    <Compile Include="Peking_Cs\p6\FileWatcher.cs" />
+    <Compile Include="Peking_Cs\p6\Register.cs" />
+    <Compile Include="Peking_Cs\p8\Graphics_BasicDrawing12.cs" />
+    <Compile Include="pracSelf\codeDrive\codedom_test.cs" />
+    <Compile Include="pracSelf\codeDrive\CodeDriver.cs" />
+    <Compile Include="pracSelf\codeDrive\CodeDriver_test.cs" />
+    <Compile Include="pracSelf\Helper\ReadFile.cs" />
+    <Compile Include="pracSelf\IO\FileOperatecs.cs" />
+    <Compile Include="pracSelf\test\Com_Excel.cs" />
+    <Compile Include="pracSelf\test\prac_type.cs" />
+    <Compile Include="pracSelf\Tools\Base64Convert.cs" />
+    <Compile Include="pracSelf\Tools\IniRw.cs" />
+    <Compile Include="pracSelf\Tools\XmlUtil.cs" />
+    <Compile Include="pracSelf\接口协定\IPerson.cs" />
+    <Compile Include="pracSelf\接口协定\Person.cs" />
+    <Compile Include="pracSelf\接口协定\PersonContract.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test\Algorithm\sort\HeapSort.cs" />
+    <Compile Include="test\Algorithm\sort\MergeSort.cs" />
+    <Compile Include="test\Algorithm\sort\QuickSort.cs" />
+    <Compile Include="test\Algorithm\sort\Sorter.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\Apple.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\Cq_Strawberry.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\Cq_WaterMelon.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\Fruit.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\Orange.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\Strawberry.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\WaterMelon.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\Wuhan_Strawberry.cs" />
+    <Compile Include="test\C_TESTMODEL\baseClass\Wuhan_Watermelon.cs" />
+    <Compile Include="test\C_TESTMODEL\Extension\Class_Example.cs" />
+    <Compile Include="test\C_TESTMODEL\Extension\Class_Extension.cs" />
+    <Compile Include="test\C_TESTMODEL\One_Instance.cs" />
+    <Compile Include="test\New_test\IntNumber.cs" />
+    <Compile Include="test\New_test\Number.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\MediatorPattern\Cq_Orchard.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\MediatorPattern\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\MediatorPattern\Orchardist.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\MediatorPattern\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\MediatorPattern\Wuhan_Orchard.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\MediatorPattern\Wuhan_Orchardist.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\ObserverPattern\IMonitor.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\ObserverPattern\IOrchard.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\ObserverPattern\Monitor.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\ObserverPattern\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\ObserverPattern\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\StrategyPattern_\Apple.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\StrategyPattern_\Fruit.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\StrategyPattern_\Orange.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\StrategyPattern_\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\StrategyPattern_\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\VisitorPattern\Applecs.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\VisitorPattern\Fruit.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\VisitorPattern\LoosenOrchardist.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\VisitorPattern\ManureOrchardist.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\VisitorPattern\Orange.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\VisitorPattern\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\VisitorPattern\Orchardist.cs" />
+    <Compile Include="test\Patterns\PatternBehavior\VisitorPattern\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternCreater\AbstractFactory\Cq_Orchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\AbstractFactory\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\AbstractFactory\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternCreater\AbstractFactory\Wuhan_Orchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\Constructor\Cq_OrchardBuilder.cs" />
+    <Compile Include="test\Patterns\PatternCreater\Constructor\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\Constructor\OrchardBuilder.cs" />
+    <Compile Include="test\Patterns\PatternCreater\Constructor\OrchardDirector.cs" />
+    <Compile Include="test\Patterns\PatternCreater\Constructor\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternCreater\Constructor\Wuhan_OrchardBuilder.cs" />
+    <Compile Include="test\Patterns\PatternCreater\FactoryFunctionModel\AppleOrchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\FactoryFunctionModel\OrangeOrchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\FactoryFunctionModel\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\FactoryFunctionModel\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternCreater\PrototypePattern\IOrchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\PrototypePattern\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\PrototypePattern\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternCreater\SIMPLE_FactoryModel\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternCreater\SIMPLE_FactoryModel\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternCreater\SingleInstance\Helicopter.cs" />
+    <Compile Include="test\Patterns\PatternCreater\SingleInstance\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternStructure\AdapterPattern\Cq_Orchard.cs" />
+    <Compile Include="test\Patterns\PatternStructure\AdapterPattern\IPlant.cs" />
+    <Compile Include="test\Patterns\PatternStructure\AdapterPattern\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternStructure\AdapterPattern\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternStructure\AdapterPattern\Wuhan_Orchard.cs" />
+    <Compile Include="test\Patterns\PatternStructure\BridgePattern\Apple.cs" />
+    <Compile Include="test\Patterns\PatternStructure\BridgePattern\Cq_Orchard.cs" />
+    <Compile Include="test\Patterns\PatternStructure\BridgePattern\Fruit.cs" />
+    <Compile Include="test\Patterns\PatternStructure\BridgePattern\Orange.cs" />
+    <Compile Include="test\Patterns\PatternStructure\BridgePattern\Orchard.cs" />
+    <Compile Include="test\Patterns\PatternStructure\BridgePattern\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternStructure\BridgePattern\Wuhan_Orchard.cs" />
+    <Compile Include="test\Patterns\PatternStructure\CompositePattern\Area.cs" />
+    <Compile Include="test\Patterns\PatternStructure\CompositePattern\ConcreteArea.cs" />
+    <Compile Include="test\Patterns\PatternStructure\CompositePattern\FruitSeller.cs" />
+    <Compile Include="test\Patterns\PatternStructure\CompositePattern\Orchardist.cs" />
+    <Compile Include="test\Patterns\PatternStructure\CompositePattern\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternStructure\DecoratorPattern\FruitDecorator.cs" />
+    <Compile Include="test\Patterns\PatternStructure\DecoratorPattern\LoosenSoilDecorator.cs" />
+    <Compile Include="test\Patterns\PatternStructure\DecoratorPattern\ManureDecorator.cs" />
+    <Compile Include="test\Patterns\PatternStructure\DecoratorPattern\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternStructure\FacadePatterns\Plant.cs" />
+    <Compile Include="test\Patterns\PatternStructure\FacadePatterns\ProgramUser.cs" />
+    <Compile Include="test\Patterns\PatternStructure\ProxyPatterns\FruitAgent.cs" />
+    <Compile Include="test\Patterns\PatternStructure\ProxyPatterns\FruitSeller.cs" />
+    <Compile Include="test\Patterns\PatternStructure\ProxyPatterns\Orchardist.cs" />
+    <Compile Include="test\Patterns\PatternStructure\ProxyPatterns\ProgramUser.cs" />
+    <Compile Include="test\PictureOCR\TestOcr.cs" />
+    <Compile Include="test\RegexUsing.cs" />
+    <Compile Include="test\Thread\TestAsync.cs" />
+    <Compile Include="test\Thread\TestTime.cs" />
+    <Compile Include="test\Thread\ThreadTest.cs" />
+    <Compile Include="test\泛型\CovarD.cs" />
+    <Compile Include="test\泛型\covariantcs.cs" />
+    <Compile Include="test\泛型\Delegate_T.cs" />
+    <Compile Include="test\泛型\Entity.cs" />
+    <Compile Include="test\泛型\Entity1.cs" />
+    <Compile Include="test\泛型\Event.cs" />
+    <Compile Include="test\泛型\Interface_covar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="test\C_TESTMODEL\pattern.txt" />
+    <Content Include="test\Patterns\Construct.png" />
+    <Content Include="test\Patterns\pattern.png" />
+    <Content Include="test\Patterns\pattern.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test\Patterns\PatternStructure\FlyweightPattern\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

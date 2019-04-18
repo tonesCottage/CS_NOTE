@@ -1,0 +1,25 @@
+程序功能：
+完成了一个夜光时钟屏保程序。
+
+使用方法：
+将“\bin\Debug”文件夹下的“LuminousClock.exe”重命名为“LuminousClock.scr”，并放到“C:\WINDOWS\system32”文件夹下，则可以像使用其他屏保程序一样使用本程序了。
+
+程序模块说明：
+主界面模块			——  ScreenSaverClock.cs
+配置界面模块			——  frmOptions.cs
+使用命令行参数的主函数模块	——  Program.cs
+存储配置信息的模块		——  ConfigParams.cs
+
+用到的技术：
+图形绘制（包括普通画笔、渐变画笔）
+静态属性和静态构造函数
+文件IO操作（包括读、写）
+异常的捕获与处理
+
+参考资料：
+网上已有的夜光时钟屏保的界面效果
+GravityBallScreenSaver中关于C#屏保程序的编程方法
+UseGradientBrush中关于C#渐变画笔的使用方法
+
+提示：
+如果只在Visual Studio中使用F5键运行整个程序，则无法实现“配置屏保参数”的功能。只有把“LuminousClock.scr”拷贝到“C:\WINDOWS\system32”文件夹下，才可以呈现出本程序的所有功能。
